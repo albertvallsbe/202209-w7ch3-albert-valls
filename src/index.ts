@@ -1,4 +1,4 @@
-import "./loadEnviorments.js";
+import "./loadEnvironment.js";
 import debug from "debug";
 import chalk from "chalk";
 import connectToDb from "./database/index.js";
