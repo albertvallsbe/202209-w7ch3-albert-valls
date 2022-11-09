@@ -5,7 +5,7 @@ import connectToDb from "./database/index.js";
 import startServer from "./server/index.js";
 import app from "./server/app.js";
 
-const { PORT: port, MONGO_URL: url } = process.env;
+const { PORT: port, MONGODB_URL: url } = process.env;
 
 try {
   await connectToDb(url);
