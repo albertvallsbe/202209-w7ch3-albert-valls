@@ -13,8 +13,8 @@ export const notFoundError = (
 ) => {
   const error = new CustomError(
     "Endpoint not found",
-    "Endpoint not found",
-    404
+    404,
+    "Endpoint not found"
   );
   next(error);
 };

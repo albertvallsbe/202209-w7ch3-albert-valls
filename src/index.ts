@@ -10,7 +10,7 @@ const { PORT: port, MONGO_URL: url } = process.env;
 try {
   await connectToDb(url);
   debug(chalk.green("Connected to database"));
-  // eslint-disable-next-line no-implicit-coercion, @typescript-eslint/no-unsafe-call
+  // eslint-disable-next-line no-implicit-coercion
   await startServer(app, +port);
   debug(chalk.green(`Server listening on http://localhost:${port}`));
 } catch (error: unknown) {

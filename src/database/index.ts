@@ -11,7 +11,7 @@ export const connectToDb = async (url: string) => {
     await mongoose.connect(url, { dbName: "w7ch3" });
     debug(chalk.yellow("Connect to database"));
   } catch {
-    debug(chalk.red("Error to connect to DDBB"));
+    debug(chalk.red("Error to connect to DDBBB"));
   }
 };
 
